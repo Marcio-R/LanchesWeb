@@ -16,6 +16,6 @@ namespace LanchesWeb.Data
 
         public DbSet<Categoria> Categorias { get; set; } = default!;
 
-        public DbSet<Lanche>? Lanches { get; set; }
+        public DbSet<Lanche> Lanches { get; set; } = default!;
     }
 }

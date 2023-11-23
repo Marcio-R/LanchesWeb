@@ -3,7 +3,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace LanchesWeb.Models
 {
-    [Table("Categoria")]
+
     public class Categoria
     {
         [Key]
