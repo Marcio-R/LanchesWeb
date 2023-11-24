@@ -4,8 +4,8 @@ namespace LanchesWeb.Repositories
 {
     public interface ILancheRepository
     {
-        IEnumerable<Lanche> Lanches { get; }
-        IEnumerable<Lanche> LanchesPreferidos { get; }
+        IEnumerable<Lanche> Lanches();
+        IEnumerable<Lanche> LanchesPreferidos();
         Lanche GetLancheById(int lancheId);
     }
 }

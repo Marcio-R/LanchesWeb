@@ -11,6 +11,9 @@ builder.Services.AddDbContext<LanchesWebContext>(options =>
 builder.Services.AddControllersWithViews();
 builder.Services.AddScoped<LancheRepository>();
 builder.Services.AddScoped<CategoriaRepository>();
+builder.Services.AddMemoryCache();
+builder.Services.AddSession();
+builder.Services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
 
 var app = builder.Build();
 
@@ -24,6 +27,7 @@ if (!app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 app.UseStaticFiles();
+app.UseSession();
 
 app.UseRouting();
 

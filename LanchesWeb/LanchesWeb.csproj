@@ -11,12 +11,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <None Include="wwwroot\imagens\Lanche1.jpg" />
-    <None Include="wwwroot\imagens\Lanche2.jpg" />
-    <None Include="wwwroot\imagens\Lanche3.jpg" />
-  </ItemGroup>
-
-  <ItemGroup>
     <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="6.0.23" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="6.0.23">
       <PrivateAssets>all</PrivateAssets>

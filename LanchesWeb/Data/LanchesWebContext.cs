@@ -16,6 +16,7 @@ namespace LanchesWeb.Data
 
         public DbSet<Categoria> Categorias { get; set; } = default!;
 
-        public DbSet<Lanche> Lanches { get; set; } = default!;
+        public DbSet<Lanche> Lanches { get; set; } = default!; 
+        public DbSet<CarrinhoCompraItem> CarrinhoCompraItens { get; set; } = default!; 
     }
 }
